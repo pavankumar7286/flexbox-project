@@ -1,0 +1,61 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f88585;
+  padding: 20px;
+  background-image: url(menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+    color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  color: whitesmoke;
+  background-color: rgb(4, 39, 39);
+}
+input{
+    background-color: rgb(4, 39, 39);
+}
+p{
+    color: whitesmoke;
+}
+button{
+    background-color: rgb(14, 73, 73);
+    color: whitesmoke;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+button:hover{
+    background-color: rgb(4, 39, 39);
+}
+
+#billTable td:first-child input {
+  color: rgb(242, 146, 146);        
+  font-weight: bold; 
+}
+#billTable td:nth-child(2) input {
+  color: rgb(242, 146, 146);
+}
+#billTable td:nth-child(3) input {
+  color: rgb(242, 146, 146);
+}
+h1{
+    text-align: left;
+    color: whitesmoke;
+    background-color: rgb(14, 73, 73);
+    border-radius: 10px;
+}
+
+

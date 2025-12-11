@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  background-color: #c4ed54e2;
+  padding: 15px;
+}
+
+.logo {
+  color: rgb(23, 22, 4);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu a {
+  color: rgb(101, 28, 28);
+  text-decoration: none;
+  margin-left: 20px; 
+}
+
+.content {
+  display: flex;
+  justify-content: center; 
+  margin: 20px;
+}
+
+.card {
+  background-color: #2996f6;
+  padding: 20px;       
+  border: 5px solid #ccc; 
+  width: 150px;        
+  height: 150px;       
+  text-align: center;
+}
+
+.footer {
+  background-color: #f18484;
+  color: rgb(14, 0, 0);
+  text-align: center;
+  padding: 15px;
+}

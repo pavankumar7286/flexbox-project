@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Adding function</h1>
+<p id="result"> </p>
+<p id="output"> </p>
+<body>
+    <script>
+        // function add(a,b){
+        //     return a + b;
+        // }
+        // document.getElementById("result").innerHTML = add(5, 10);
+        const add = (a, b) => a + b;
+        const multiply = (a, b) => a * b;
+        document.getElementById("result").innerHTML = multiply(5, 10);
+        document.getElementById("result").innerHTML = add(5, 10);
+        function greet()
+        {
+            return "Hello, welcome to our website!";
+        }
+        document.getElementById("output").innerHTML = greet();
+    </script>
+</body>
+</html>

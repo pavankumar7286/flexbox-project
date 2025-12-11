@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(https://www.hdwallpapers.in/download/white_love_heart_shapes_glare_background_hd_love-1600x900.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;              
+            height: 100vh;                 
+            margin: 0;  
+            background-color: rgb(227, 113, 210);               
+}
+
+        h1{
+            font-size: 50px;
+            color: black;
+            background-color: beige;
+        }
+        input{
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+        button{
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+        }
+        p{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        img{
+            height: 300px;
+            width: 300px;
+            margin-top: 20px;
+            border-radius: 500px;
+            border: 10px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>LOVE CALCULATOR</h1>
+    <hr>
+    <input id="a" placeholder="ENTER THE NAME"><br>
+    <input id="b" placeholder="ENTER THE NAME"><br>
+    <button id="cal">Calculate</button><br>
+    <p id="output"> </p>
+    <!-- <img src="https://cricshots.com/wp-content/uploads/2025/11/Smriti-Mandhana-Palash-Muchhal.jpg" alt="virushka"> -->
+</body>
+<script>
+    document.getElementById("cal").onclick=function(){
+        let boy=document.getElementById("a").value;
+        let girl=document.getElementById("b").value;
+        let random=Math.random()*100;
+        random=Math.floor(random)+1;
+        document.getElementById("output").innerText="The love ❤ percentage between "+boy+" and "+girl+" is "+97+"%";
+    }
+</script>
+</html>

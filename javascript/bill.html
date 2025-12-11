@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Canteen Bill</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>-VK Restaurant </h1>
+  <h2>BILL</h2>
+
+  <table border="1" id="billTable">
+    <tr>
+      <th>Item</th>
+      <th>Qty</th>
+      <th>Price</th>
+      <th>Amount</th>
+    </tr>
+    <tr>
+      <td><input type="text" value=" "></td>
+      <td><input type="number" value=" "></td>
+      <td><input type="number" value=" "></td>
+      <td class="amount"> </td>
+    </tr>
+  </table>
+
+  <button onclick="addRow()">Add Item</button>
+  <button onclick="calculateTotal()">Calculate Total</button>
+
+  <p>Grand Total: <span id="grandTotal"> </span></p>
+
+  <script>
+    function addRow() {
+      var table = document.getElementById("billTable");
+      var row = table.insertRow(); // adds a new row at the end
+
+      // create 4 cells
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      var cell3 = row.insertCell(2);
+      var cell4 = row.insertCell(3);
+
+      // put inputs in the first three cells
+      cell1.innerHTML = "<input type='text' placeholder='Item'>";
+      cell2.innerHTML = "<input type='number' value='1'>";
+      cell3.innerHTML = "<input type='number' value='0'>";
+      cell4.innerHTML = "0"; // amount starts at 0
+    }
+
+    function calculateTotal() {
+      var rows = document.getElementById("billTable").rows;
+      var total = 0;
+
+      for (var i = 1; i < rows.length; i++) { // skip header
+        var qty = rows[i].cells[1].children[0].value;
+        var price = rows[i].cells[2].children[0].value;
+        var amount = qty * price;
+        rows[i].cells[3].innerHTML = amount;
+        total += amount;
+      }
+
+      document.getElementById("grandTotal").innerHTML = total;
+    }
+  </script>
+</body>
+</html>
